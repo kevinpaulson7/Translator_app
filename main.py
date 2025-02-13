@@ -481,10 +481,10 @@ class TextToSpeechScreen(Screen):
         except Exception as e:
             self.output_text.text = f"Error: {str(e)}"  
 
-    # def speak(self, text):
-    #     engine = pyttsx3.init()
-    #     engine.say(text)
-    #     engine.runAndWait()
+    def speak(self, text):
+        engine = pyttsx3.init()
+        engine.say(text)
+        engine.runAndWait()
 
 
     def go_back(self, instance):
