@@ -17,6 +17,10 @@ import threading
 from kivy.clock import Clock
 import pyttsx3
 
+from kivy.config import Config
+Config.set('modules', 'touchring', '0')
+
+
 import asyncio
 
 #for creating the audio output in the file itself.
